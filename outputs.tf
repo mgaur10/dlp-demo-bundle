@@ -29,7 +29,7 @@ output "_module_pdf_redaction_01_project_id" {
 output "_module_pdf_redaction_04_infotypes" {
   value = module.pdf_redaction.pdf_redaction_infotypes
 }
-*/
+
 
 output "_module_pdf_redaction_01_input_bucket" {
   value = module.pdf_redaction.pdf_redaction_input_bucket
@@ -41,11 +41,11 @@ output "_module_pdf_redaction_02_output_bucket" {
   value = module.pdf_redaction.pdf_redaction_output_bucket
 }
 
+*/
 
 
 
-
-output "_module_pdf_redaction_03_upload_command" {
+output "_module_dlp_pdf_redaction_03_upload_command" {
   value = module.pdf_redaction.pdf_redaction_upload_command
 }
 
@@ -97,25 +97,25 @@ output "_module_dlp_api_05_test_script_redaction" {
 output "_module_automatic_gcs_classification_01__project_id" {
   value = module.gcs_classification.automatic_gcs_classification_project_id
 }
-*/
 
-output "_module_automatic_gcs_classification_00_input_qa_bucket" {
+
+output "_module_dlp_automatic_gcs_classification_00_input_qa_bucket" {
   value = module.gcs_classification.automatic_gcs_classification_input_qa_bucket
 }
 
 
 
-output "_module_automatic_gcs_classification_02_output_sesitive_bucket" {
+output "_module_dlp_automatic_gcs_classification_02_output_sesitive_bucket" {
   value = module.gcs_classification.automatic_gcs_classification_output_sesitive_bucket
 }
 
 
-output "_module_automatic_gcs_classification_03_output_non_sesitive_bucket" {
+output "_module_dlp_automatic_gcs_classification_03_output_non_sesitive_bucket" {
   value = module.gcs_classification.automatic_gcs_classification__output_non_sesitive_bucket
 }
+*/
 
-
-output "_module_automatic_gcs_classification_04_upload_command" {
+output "_module_dlp_automatic_gcs_classification_04_upload_command" {
   value = module.gcs_classification.automatic_gcs_classification_upload_command
 }
 
@@ -140,16 +140,15 @@ output "_module_bigquery_udf_05_udf_bq_reidenitify_step" {
 
 */
 
-output "_module_bigquery_udf_01_credit_card_mask_query" {
+output "_module_dlp_bigquery_udf_01_credit_card_mask_query" {
   value = module.bq_udf.udf_bq_deidenitify_credit_card_query_command
 }
 
-output "_module_bigquery_udf_02_udf_deidentify_query" {
+output "_module_dlp_bigquery_udf_02_udf_deidentify_query" {
   value = module.bq_udf.udf_bq_deidenitify_query_command
 }
 
 
-output "_module_bigquery_udf_03_udf_bq_reidenitify_query" {
+output "_module_dlp_bigquery_udf_03_udf_bq_reidenitify_query" {
   value = module.bq_udf.udf_bq_reidenitify_query_command
 }
-
