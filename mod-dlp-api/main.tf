@@ -170,7 +170,7 @@ resource "google_compute_router_nat" "nats" {
 resource "google_compute_instance" "dlp_demo_server" {
     project      = google_project.demo_project_dlp_api.project_id
     name         = "dlp-demo-server"
-    machine_type = "n2-standard-4"
+    machine_type = "f1-micro"
     zone         = var.network_zone
 
     shielded_instance_config {
