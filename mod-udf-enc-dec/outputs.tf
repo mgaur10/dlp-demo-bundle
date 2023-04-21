@@ -50,6 +50,10 @@ output "udf_bq_reidenitify_query_command" {
 
 
 
+output "udf_bq_deidenitfy_reidenitify_query_command" {
+  value = "SELECT SSN as RAW_DATA, ${google_bigquery_dataset.clear_dataset.dataset_id}.deidentify(SSN) AS TOKENIZED_SSN, ${google_bigquery_dataset.clear_dataset.dataset_id}.reidentify(${google_bigquery_dataset.clear_dataset.dataset_id}.deidentify(SSN)) AS DECRYPTED_SSN, FROM `${google_project.demo_project_bq_udf.project_id}.${google_bigquery_dataset.clear_dataset.dataset_id}.${google_bigquery_table.clear_table.table_id}`;"
+}
+
 /*
 
 output "udf_bq_input_bucket" {
