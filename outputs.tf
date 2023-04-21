@@ -152,3 +152,9 @@ output "_module_dlp_bigquery_udf_02_udf_deidentify_query" {
 output "_module_dlp_bigquery_udf_03_udf_bq_reidenitify_query" {
   value = module.bq_udf.udf_bq_reidenitify_query_command
 }
+
+ 
+output "_module_dlp_bigquery_udf_04_udf_bq_deidenitfy_reidenitify_query" {
+  value = module.bq_udf.udf_bq_deidenitfy_reidenitify_query_command
+}
+
